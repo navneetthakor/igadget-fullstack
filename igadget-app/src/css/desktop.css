@@ -1,0 +1,1115 @@
+/* css reset  */
+* {
+    box-sizing: border-box;
+    padding: 0 0;
+    margin: 0 0;
+}
+
+.disableCss{
+    display: none;
+}
+
+img:hover, button:hover{
+    cursor: pointer;
+}
+img:active{
+    border: 2px solid transparent;
+}
+
+
+/* css variables */
+:root {
+    --primeColor1: royalblue;
+    --primeColor2: #FFE5B4;
+}
+
+/*-------------------- header of a website----------------------------  */
+header {
+    height: 11vh;
+    width: 100vw;
+    background-color: var(--primeColor1);
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+/* logo division of header  */
+.logodiv {
+    height: 100%;
+    width: 20%;
+    margin-left: 8vw;
+    overflow: hidden;
+}
+
+.logodiv img {
+    height: 70%;
+    width: 80%;
+    margin-top: 0.8vw;
+}
+
+/* serachbar design  */
+.searchdiv {
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 40%;
+    width: 40%;
+    margin-top: 3vh;
+    overflow: hidden;
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.searchdiv>* {
+    border: 2px solid white;
+    height: 100%;
+}
+
+.searchdiv>input {
+    width: 93%;
+    padding-left: 5%;
+}
+
+.searchdiv>button {
+    width: 7%;
+    background-color: var(--primeColor2);
+}
+
+.searchdiv>button>img {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* icon devision  */
+.headicon {
+    height: 55%;
+    width: 20%;
+    /* border: 2px solid white; */
+    overflow: hidden;
+    margin-top: 2.5vh;
+    margin-left: 7%;
+    display: flex;
+    flex-direction: row;
+}
+
+.headbtn {
+    margin-left: 15%;
+    background-color: transparent;
+    border: none;
+}
+
+.acntIcon img {
+    height: 100%;
+    /* margin-left: 3vw; */
+}
+
+.fvrtIcon>img,
+.shpIcon>img {
+    height: 80%;
+    filter: invert();
+}
+
+
+/* subheader styling  */
+subheader {
+    height: 5vh;
+    width: 100vw;
+    background-color: var(--primeColor2);
+    box-shadow: -1px 1px 8px -1px black;
+    display: flex;
+    flex-direction: row;
+    padding-left: 25vw;
+    align-items: center;
+}
+
+subheader a {
+    color: black;
+    margin-left: 5vw;
+    font-weight: 500;
+    font-size: 2.5vh;
+    text-decoration: none;
+}
+
+subheader a:hover {
+    text-decoration: underline;
+    color: brown;
+}
+
+/* ---------------------------------home BAnner styling--------------------------------- */
+#homeBanner {
+    height: 84vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#homeBanner>img {
+    height: 80%;
+    width: 70%;
+    border-radius: 8px;
+}
+
+/* --------------------------Watch Grid------------------------------------------------ */
+.wGUpperImg {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* upper images */
+.wGUpperImg img {
+    height: 90%;
+    width: 48%;
+    border-radius: 8px;
+}
+
+.femaleWatch {
+    margin-left: 3%;
+}
+
+/* ------------------------------Mobile Grid styling------------------------------ */
+
+
+
+/* ------------------------iteam Grid styling---------------------------------------- */
+.iteamGrid {
+    display: flex;
+    background-color: white;
+    justify-items: center;
+    align-items: center;
+}
+
+/* -----------------------------iteamcard styling------------------------------------ */
+#iteamCard {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+
+#iteamCard:hover {
+    background-color: white;
+    box-shadow: 1px 1px 20px lightgray;
+    border-radius: 5px;
+}
+
+#iteamImage {
+    margin-top: 5%;
+    margin-left: 15%;
+    height: 60%;
+    width: 70%;
+}
+
+#iteamImage img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+#iteamDetails {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    height: 30%;
+}
+
+#iteamDetails span{
+    color: gray;
+    text-decoration: line-through;
+}
+
+/* ------------------------------BottomGrid Styling-------------------------- */
+.bottomGrid{
+    height: 45%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* ---------------------------SideGrid styling----------------------------- */
+.sideGrid{
+    height: 100%;
+    width: 60%;
+    background-color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-items: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+/* --------------------horizontal banner--------------------------------- */
+.hbanner{
+    height: 60vh;
+    width: 100vw;
+}
+
+.hbanner img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+/* ----------------------Footer styling------------------------------- */
+#footer{
+    width: 100vw;
+    height: 40vh;
+    background-color: rgb(11, 2, 74);
+}
+
+#footer div{
+    width: 33%;
+    padding-left: 5vw;
+}
+
+#footer h3{
+    font-size: 4vh;
+    margin-bottom: 3vh;
+    color: white;
+}
+
+#footer a, #footer h4{
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+/* ------------------------------------------------------------------------------------------------------------- */
+/* -------------------------------Product page---------------------------------------------------------- */
+#prodMainDetl{
+    margin-top: 2%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: 0.1px solid lightgray;
+}
+.pmd1{
+    height: 100%;
+    width: 50%;
+}
+
+/* image division  */
+#pImgContainer{
+    height: 13%;
+    width: 100%;
+}
+
+#pImgContainer img{
+    margin-bottom: 2%;
+    margin-right: 2%;
+    height: 100%;
+    width: 25%;
+    border-radius: 5px;
+}
+
+#pimgbig{
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid blue; */
+}
+#pimgbig img{
+    height: 90%;
+    width: 80%;
+    border-radius: 5px;
+}
+
+/* main details division */
+#pdetails{
+    padding-top: 5%;
+    font-size: 3vh;
+}
+#pdetails > h1{
+    padding-top: 5%;
+    font-size: 4vh;
+}
+
+/* rating division */
+#totratings{
+    height: 5%;
+    width: 20%;
+    margin-top: 3%;
+    background-color: #f5f5f5;
+    display: inline-block;
+    font-size: 0;
+}
+
+.star{
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    background-image: url('../photos/filled-star.png');
+    background-size: cover;
+}
+
+#overview{
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+}
+#overview span{
+    font-size: 3vh;
+}
+
+/* product counter */
+#pcounter{
+    border: 1px solid gray;
+    height: 10%;
+    width: 30%;
+    border-radius: 5px;
+}
+#pc{
+    height: 100%;
+    width: 40%;
+}
+#min, #max  {
+    border-radius: 5px;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 30%;
+    color: orangered;
+    cursor: pointer;
+}
+#pcounter > div{
+    text-align: center;
+    padding-top: 1.5vh;
+    font-weight: bold;
+}
+
+/* cart  */
+#cart{
+    height: 10%;
+    width: 100%;
+    margin-top: 5%;
+}
+#addFavorite{
+    height: 100%;
+    width: 10%;
+    border: 1px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+#addFavorite:hover{
+    filter: invert();
+    
+}
+#addFavorite img{
+    margin: 10% 10%;
+    height: 80%;
+    width: 80%;
+}
+
+#addToCart{
+    height: 100%;
+    width: 30%;
+    color: orangered;
+    font-weight: bold;
+    border: 1px solid gray;
+    text-align: center;
+    padding-top: 1.5vh;
+    border-radius: 5px;
+    margin-left: 5%;
+    cursor: pointer;
+
+}
+#addToCart:hover{
+    color: white;
+    background-color: orangered;
+
+}
+
+/* ---description container--- */
+#pDesc{
+    background-color: whitesmoke;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* ---------------------------- Add-to-cart --------------------------------------------- */
+#cartPage{
+    margin-top: 0.4vh;
+    width: 100%;
+    height: 83.6vh;
+    background-color: whitesmoke;
+
+}
+.cartMain{
+    width: 45%;
+    background-color: white;
+    border-radius: 8px;
+    margin-inline: auto;
+    margin-top: 5vh;
+    border: 2px solid lightgray;
+}
+
+
+.cartHead{
+    width: 90%;
+    border-top: 1px solid var(--primeColor1);
+    margin-inline:auto;
+    padding-top: 2vh;
+}
+
+/* for checkout button  */
+.cartMain > button{
+    margin: 2vh;
+    margin-left: 20vw;
+}
+
+/* for review section  */
+#reviewContainer{
+    border: 2px solid lightgray;
+    padding: 5%;
+}
+#reviewContainer > h2{
+    margin-bottom: 2%;
+}
+
+#reviewInnerContainer{
+    min-height: 30%;
+    margin-top: 20px;
+    margin-bottom: 20px,
+}
+
+#reviewCustmrAvtar{
+    border: 1px solid var(--primeColor1);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+/* user add review block  */
+#reviewBlock{
+    padding-left: 5%;
+    border-radius: 8px;
+    position: fixed;
+    top: 150px;
+    left: 200px;
+    height: 500px;
+    width: 70%;
+    z-index: 100000;
+    box-shadow: 2px 2px 500px black;
+    background-color: white;
+}
+
+#reviewBlock textarea{
+    width: 450px;
+}
+
+
+/* --------------------related to Addtocart, addtoFavourit----------------------------- */
+.fCart{
+    height: 12vh;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 2vh;
+}
+.fCart button{
+    margin-top: 2vh;
+    margin-left: 1vw;
+}
+
+.cartIteamImg{
+    height: 100%;
+    width: 15%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid lightgray;
+}
+.cartIteamImg > img{
+    height: 100%;
+    width: 100%;
+}
+
+.cartIteamContent{
+    width: 85%;
+}
+
+.cartIteamTitle{
+    margin-left: 2vw;
+    width: 35%;
+}
+
+/* -------------------------------------------------------------------------------------- */
+/* --------------------------------User Account------------------------------------------ */
+/* #userContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 84vh;
+}
+
+#usercnt{
+    height: 75vh;
+    width: 35vw;
+    border: 2px solid gray;
+    border-radius: 8px;
+    overflow: hidden;
+} */
+
+/* user profile heading  */
+/* #userHead{
+    height: 25%;
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(to bottom right, darkblue, #cead61);
+    align-items: center;
+}
+
+#userHead > img{
+    height: 80%;
+    overflow: hidden;
+    border: 1px solid gray;
+    border-radius: 220px;
+    background-color: whitesmoke;
+    margin-left: 5%;
+}
+#userHead > div{
+    font-size: 4.5vh;
+    font-weight: bold;
+    margin-left: 7%;
+    color: white;
+} */
+
+/* user profile body  */
+/* #userBody{
+    background-color: whitesmoke;
+    height: 75%;
+}
+
+#userBody > button{
+    height: 15%;
+    font-size: 2.5vh;
+    text-align: center;
+    border: 1px solid gray;
+    cursor: pointer;
+}
+#userBody > button:hover{
+    background-color: var(--primeColor1);
+    color: white;
+}
+#userBody > button:active{
+    background-color: orangered;
+    color: white;
+} */
+
+
+/* -----------------new user profile---------------------- */
+#user2OuterCont{
+    background-color: whitesmoke;
+    height: 83vh;
+    margin-top: 1vh;
+}
+
+#user2Container{
+    height: 80%;
+    width: 30%;
+    margin-inline: auto;
+    background-color: white;
+    border: 2px solid gray;
+    border-radius: 8px;
+    margin-top: 2vh;
+}
+
+#user2ImgCont{
+    background: linear-gradient(rgb(28, 200, 212),rgb(14, 14, 219));
+    height: 25vh;
+    width: 25vh;
+    border-radius: 300px;
+    margin-inline: auto;
+    margin-top: 15%;
+}
+
+#user2ImgCont  img{
+    height: 90%;
+    width: 90%;
+    border-radius: 300px;
+}
+#user2ImgCont  div{
+    background-color: white;
+    height: 90%;
+    width: 90%;
+    border-radius: 300px;
+}
+
+.user2Btn{
+    width: 50%;
+    margin-top: 3vh;
+}
+
+
+/* ------------------------------------------------------------------------------------ */
+/* -----------------------Admin login----------------------------------------------- */
+.admlgnContainer{
+    height: 60vh;
+    width: 30vw;
+    border: 2px solid gray;
+    border-radius: 5px;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.admlgnContainer > input{
+    padding: 8px;
+    width: 80%;
+    margin-inline: auto;
+    margin-top: 5vh;
+    border-radius: 5px;
+    border: 2px solid gray;
+}
+
+
+/* -------------------------------------------styling for '/prods'---------------------------------
+------------------------------------------------------------------------------------------------ */
+#prodsContainer{
+    width: 80vw;
+    margin-left: 10vw;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+
+/* --------------------------------------------------------------------------------------------------
+---------------------------------Checkout Page----------------------------------------------------
+----------------------------------------------------------------------------------------------- */
+#chekoutOuterContainer{
+    background-color: lightgray;
+}
+#chekoutOuterContainer input{
+    margin-top: 0.5vh;
+    padding: 0.7vh;
+    border-radius: 5px;
+    border: 2px solid lightgray;
+}
+
+#checkoutInnerContainer{
+    height: 90vh;
+    width: 60vw;
+    border-radius: 8px;
+}
+
+/* ------------------------------------------styling for left part  */
+#checkoutShipping{
+    height: 100%;
+    width: 49%;
+    border: 0.5px solid gray;
+}
+
+#chekoutIteamGrid{
+    width: 90%;
+    height: 60%;
+    margin-inline: auto;
+    border-top: 1px solid var(--primeColor1);
+    border-bottom: 1px solid var(--primeColor1);
+}
+
+/* styling for iteams in side shipping */
+#checkoutIteam{
+    margin-top: 3%;
+    width: 100%;
+    height: 25%;
+}
+
+#checkoutIteamImg{
+    height: 95%;
+    width: 25%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid lightgray;
+}
+#checkoutIteamImg > img{
+    height: 100%;
+    width: 100%;
+}
+
+.checkoutIteamContent{
+    margin-left: 7%;
+    width: 30%;
+}
+
+/* subtotal and total in shipping  */
+#chekoutShippingTotal{
+    height: 10%;
+    width: 90%;
+    border-bottom: 1px solid var(--primeColor1);
+    margin-left: 5%;
+    padding: 0% 5%;
+}
+
+#chekoutShippingTotal > div{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* -------------------------------------------styling for right part  */
+#checkoutRightCont{
+    height: 100%;
+    width: 50%;
+    margin-left: 1%;
+
+}
+
+/* devlivery related  */
+#chekcoutDelivery{
+    height: 59%;
+    width: 100%;
+    margin-bottom: 2%;
+    border: 0.5px solid gray;
+}
+
+#checkoutDeliveryInput{
+    width: 90%;
+    height: 75%;
+    margin-inline: auto;
+    border-top: 1px solid var(--primeColor1);
+}
+
+/* payment related */
+#checkoutPayment{
+    height: 39%;
+    width: 100%;
+    border: 0.5px solid gray;
+}
+
+#checkoutPaymentInfo{
+    width: 90%;
+    margin-inline: auto;
+    border-top: 1px solid var(--primeColor1);
+    padding-top: 1vh;
+}
+#checkoutPaymentInfo > button{
+    margin-left: 35%;
+    margin-top: 1vh;
+}
+
+#checkoutRadioCont{
+    border: 2px solid lightgray;
+    border-radius: 8px;
+    width: 90%;
+    margin-inline: auto;
+    margin-top: 1vh;
+    padding: 1vh 1vw;
+}
+#checkoutRadioCont label{
+    margin-left: 1vw;
+}
+
+/* classes used in many checkout components  */
+/* used in chekout,cart,fav,userAcount pages  */
+.checkoutShape{
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid lightgray;
+}
+
+.checkoutHeading{
+    font-size: 3.5vh;
+    padding: 2vh 2vw;
+}
+
+.checkoutSecHeading{
+    font-size: 2.5vh;
+}
+
+.checkout2in1{
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    margin-inline: auto;
+}
+
+.checkout1in1{
+    margin-top: 1vh;
+    margin-inline: auto;
+}
+
+/* -----------Styling for login form ----------------- */
+.loginContainer{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(52, 59, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.loginContainer > div{
+    /* border: 2px solid red; */
+    width: 35%;
+    height: 80vh;
+}
+
+.loginLeftHeading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.loginLeftHeading img{
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 5vh;
+    box-shadow: 1px 1px 5px rgb(101, 205, 207);
+}
+.loginLeftHeading h2{
+    color: var(--primeColor2);
+    margin-bottom: 2vh;
+}
+
+/* login form  */
+.loginFormContainer{
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loginFormContainer::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #45f3ff;
+    animation: loginFormBorder 6s linear infinite;
+}
+
+
+@keyframes loginFormBorder {
+    0%{
+        transform: rotate(0deg);
+    }
+    33%{
+        transform: rotate(180deg);
+    }
+    66%{
+        transform: rotate(280deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.loginForm{
+    border-radius: 8px;
+    position: relative;
+    z-index: 3;
+    height: 99%;
+    width: 99%;
+    background-color: rgb(30, 31, 33);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm h2{
+    margin-bottom: 10%;
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+.loginFormField{
+    width: 70%;
+    position: relative;
+    border-bottom: 1px solid white;
+    margin-bottom: 2vh;
+} 
+.loginFormField >span {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.loginFormField input:valid ~ span,
+.loginFormField input:focus ~ span{
+    transform: translateY(-5vh);
+}
+
+.loginFormField >input {
+    width: 100%;
+    height: 7vh;
+    background-color: transparent;
+    padding-top: 10%;
+    border: none;
+    outline: none;
+    color: white;
+} 
+
+.loginFormLink{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.loginFormLink p{
+    cursor: pointer;
+}
+
+.loginForm > button{
+    width: 35%;
+    margin-top: 5%;
+    font-size: 2.5vh;
+    font-weight: 700;
+}
+
+
+/* ------------------------------utility classes------------------------------------- */
+.container {
+    height: 80vh;
+    width: 80vw;
+    margin-left: 10vw;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+/* to add pointer functionality */
+.link {
+    cursor: pointer;
+}
+
+.topmargin{
+    margin-top: 10vh;
+}
+
+.flexRow{
+    display: flex;
+    flex-direction: row;
+}
+
+.flexCol{
+    display: flex;
+    flex-direction: column;
+}
+.marginLeft{
+    margin-left: 5%;
+}
+.marginRight{
+    margin-right: 5%;
+}
+
+.dummyPrice{
+    color: gray;
+    text-decoration: line-through;
+}
+
+.price{
+    color:black;
+    font-size: 5vh;
+}
+
+/* virtical single image in grid  */
+.gV1Image{
+    height: 100%;
+    width: 35%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.gV1Image img{
+    height: 100%;
+    width: 100%;
+}
+
+/* horizontal single image in grid  */
+.gH1Image{
+    height: 50%;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 5%;
+}
+.gH1Image img{
+    height: 100%;
+    width: 100%;
+}
+
+/* primary heading styling  */
+.primHead{
+    font-weight: 900;
+    text-decoration: underline;
+    font-size: 3.5vh;
+
+}
+
+/* primary button  */
+.primButton{
+    height: 5vh;
+    width: 7vw;
+    font-size: 2.3vh;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: var(--primeColor1);
+    color: white;
+    font-weight: 700;
+}
+
+.primButton:hover{
+    background-color: var(--primeColor1);
+    /* color: black; */
+    border: 5px solid transparent;
+}
+
+.primButton:active{
+    background-color: orangered;
+    color: white;
+}
+
+/* secondary button (mostly for unwanted actions like: remove) */
+.secButton{
+    height: 5vh;
+    width: 7vw;
+    font-size: 2.3vh;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    background-color: maroon;
+    color: white;
+    font-weight: 700;
+}
+
+.secButton:hover{
+    /* background-color: rgba(137, 18, 18, 0.589); */
+    background-color: red;
+}
+
+.secButton:active{
+    background-color: maroon;
+}
+
+/* used in admin login and signup and checkout*/
+.flexCenter{
+    background-color: lightgray;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

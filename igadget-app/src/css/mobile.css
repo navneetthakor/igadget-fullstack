@@ -1,0 +1,567 @@
+@media screen and (max-width: 1200px) {
+    * {
+        font-size: 2vh;
+    }
+
+    /* css variables */
+    :root {
+        --primeColor1: royalblue;
+        --primeColor2: #FFE5B4;
+    }
+
+    
+    /* ----------------navbar styling---------------------  */
+    header {
+        height: 10vh;
+        width: 100vw;
+        position: sticky;
+        top: 0;
+        left: 0;
+        z-index: 100000000;
+    }
+
+    /* logo styling  */
+    .logodiv {
+        height: 7vh;
+        width: 50vw;
+        margin-top: 1.5vh;
+        margin-left: 20vw;
+    }
+
+    .logodiv>img {
+        height: 100%;
+        width: 100%;
+    }
+
+    /* navbar button styling  */
+    #NavabarBtn {
+        display: block;
+        height: 5vh;
+        width: 10vw;
+        margin-left: 10vw;
+        margin-top: 3vh;
+        color: white;
+        border: 2px solid white;
+        border-radius: 5px;
+    }
+
+    /* SubMenu stying----- */
+    .CloseButton {
+        height: 5vh;
+        width: 10vw;
+        margin-left: 10vw;
+        margin-top: 3vh;
+        color: var(--primeColor1);
+        border-radius: 5px;
+        margin-left: 80vw;
+    }
+
+    .SubMenu .LinkContainer {
+        height: 40vh;
+        text-align: center;
+    }
+
+    .SubMenu .LinkContainer a {
+        text-decoration: none;
+        font-size: 3vh;
+        margin-top: 1vh;
+        border: 2px solid lightgray;
+        padding: 1vh;
+        border-radius: 5px;
+    }
+
+    /* Searchbar in navbar------ */
+    .NavSearch {
+        display: block;
+        height: 5vh;
+        width: 100vw;
+        overflow: hidden;
+        padding: 0 0;
+        display: flex;
+        flex-direction: row;
+        border: 2px solid gray;
+        /* border-radius: 5px; */
+    }
+
+    .NavSearch input,
+    .NavSearch button {
+        display: block;
+        border: 2px solid white;
+        height: 100%;
+    }
+
+    .NavSearch>input {
+        width: 90vw;
+        padding-left: 5vw;
+    }
+
+    .NavSearch>button {
+        width: 10vw;
+        background-color: var(--primeColor2);
+    }
+
+    .NavSearch>button>img {
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+
+    /* ------HomePage (HomeBanner styling)----- */
+    #homeBanner {
+        height: 70vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #homeBanner>img {
+        height: 80%;
+        width: 90%;
+        border-radius: 8px;
+    }
+
+
+    /* --------HomePage (WatchGrid related)--------- */
+    #WGContainer {
+        height: 80vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        margin-left: 0;
+    }
+
+    /* Banners -------- */
+    #WGBanner {
+        display: flex;
+        align-items: center;
+        justify-items: center;
+        height: 50%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #WGBanner #Wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 100%);
+        height: 100%;
+        width: 100%;
+        animation: slider 3s step-start infinite alternate;
+    }
+
+    /* upper images */
+    #Wrapper>img {
+        height: 80%;
+        width: 90%;
+        display: block;
+        border-radius: 8px;
+        margin-left: 5vw;
+    }
+
+    @keyframes slider {
+        0% {
+            transform: translateX(0%);
+        }
+
+        51% {
+            transform: translateX(-100%);
+        }
+
+    }
+
+    /* Iteams in watch grid ---------- */
+    /* React-multi-carousel used here  */
+    #BottomGrid {
+        height: 50%;
+    }
+
+    .HomeCarousel {
+        height: 100%;
+        overflow-y: hidden;
+    }
+
+
+    /* ----Side Grid styling-----  */
+    /* used in mobile and headphone grid  */
+    .sideGrid {
+        width: 94%;
+        height: 80%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        margin-inline: auto;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* -----Laptop Grid----------- */
+    .gH1Image {
+        border: 1px solid lightgray;
+        height: 60vh;
+        width: 96vw;
+        margin-inline: auto;
+        margin-bottom: 7vh;
+    }
+
+    /* -------Footer------ */
+    #footer {
+        height: 45vh;
+    }
+
+    #footer div {
+        width: 100%;
+        height: 50%;
+        padding-top: 3vh;
+    }
+
+    #footer h3 {
+        font-size: 2.5vh;
+        margin-bottom: 2vh;
+        color: white;
+    }
+
+    #footer a,
+    #footer h4 {
+        font-weight: 400;
+        font-size: 2vh;
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    /* --------------------------------------------------------------------------------------------------
+    ---------------------------------Checkout Page----------------------------------------------------
+    ----------------------------------------------------------------------------------------------- */
+    #chekoutOuterContainer {
+        height: 220vh;
+    }
+    #chekoutOuterContainer input[type="txt"],
+    #chekoutOuterContainer input[type="email"],
+    #chekoutOuterContainer input[type="number"]{
+        width: 40vw;
+    }
+    #chekoutOuterContainer input[name="address"]{
+        width: 80vw;
+    }
+
+    #chekoutOuterContainer div,
+    #chekoutOuterContainer input
+     {
+        font-size: 1.5vh;
+    }
+
+    #checkoutInnerContainer {
+        height: 200vh;
+        width: 90vw;
+        border-radius: 8px;
+    }
+
+    /* ------------------------------------------styling for left part  */
+    #checkoutShipping {
+        height: 100vh;
+        width: 100%;
+    }
+
+    /* -------------------------------------------styling for right part  */
+    #checkoutRightCont {
+        height: 100%;
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+    /* devlivery related  */
+    #chekcoutDelivery {
+        height: 50vh;
+        width: 100%;
+        margin-bottom: 2%;
+        margin-top: 2%;
+    }
+
+    /* payment related */
+    #checkoutPayment {
+        height: 50vh;
+        width: 100%;
+        border: 0.5px solid gray;
+    }
+
+    #checkoutPaymentInfo>button {
+        margin-left: 35%;
+        margin-top: 1vh;
+    }
+
+
+    /* classes used in many checkout components  */
+    /* used in chekout,cart,fav,userAcount pages  */
+    .checkoutHeading {
+        padding: 2vh 5vw;
+    }
+
+    .checkoutSecHeading {
+        font-size: 1.8vh;
+    }
+
+    /* ---------for cart and fav------  */
+    #cartPage {
+        height: auto;
+        background-color: white;
+        overflow: visible;
+        margin: 0;
+        border: transparent;
+    }
+
+    .cartMain {
+        width: 90vw;
+        overflow: visible;
+    }
+
+    .fCart {
+        height: 35vh;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+    }
+
+    .fCart #mobileButton {
+        display: inline;
+        margin-inline: auto;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .cartIteamImg {
+        height: 50%;
+        width: 70%;
+        margin-inline: auto;
+        margin-top: 4%;
+    }
+
+
+    .cartIteamTitle {
+        margin-left: 2vw;
+        width: 35%;
+    }
+
+    .CartContent {
+        width: 70%;
+        height: 20%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5%;
+        margin-inline: auto;
+    }
+
+    .CartContentIteam {
+        width: auto;
+        margin: 0;
+    }
+
+    /* ------------------------------------------------------------------------------ */
+    /* ---------------------Product page------------------------------------------ */
+    /* ----------------------------------------------------------------------------- */
+    #prodMainDetl {
+        height: auto;
+    }
+
+    #prodImag {
+        height: 60vh;
+        width: 90vw;
+        display: inline;
+        margin-inline: auto;
+    }
+
+    /* main details division */
+    #pdetails {
+        border-top: 2px solid lightgray;
+        border-radius: 8px;
+        padding-left: 3%;
+        font-size: 2vh;
+    }
+
+    #pdetails>h1 {
+        font-size: 3.5vh;
+    }
+
+    /* rating division */
+    #totratings {
+        height: 5vh;
+        width: 42vw;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    #overview span {
+        font-size: 2.5vh;
+    }
+
+    /* product counter */
+    #pcounter {
+        border: 1px solid gray;
+        height: 5vh;
+        width: 30vw;
+    }
+
+    #pcounter>div {
+        padding-top: 1vh;
+    }
+
+    /* cart  */
+    #cart {
+        width: 70vw;
+        height: 5vh;
+        margin-bottom: 2vh;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #addFavorite {
+        width: 15vw;
+    }
+
+    /* ---description container--- */
+    #pDesc {
+        padding-bottom: 5vh;
+        height:max-content;
+    }
+
+    /* --- Review seciton of product page ---  */
+    #reviewBlock{
+        top: 200px;
+        left: 20px;
+        width: 90%;
+    }
+    #reviewBlock textarea{
+        width:  93%;
+    }
+
+    /* ----------------------------------------------- */
+    /* -----------for Prods ---------------------------- */
+    /* ---------------------------------------------- */
+    #prodsContainer{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    /* --------------------------------------------- */
+    /* ----------Profile page-------------------- */
+    /* ---------------------------------- */
+    #user2OuterCont{
+        height: 85vh;
+        margin-top: 0;
+    }
+    
+    #user2Container{
+        height: 80%;
+        width: 90vw;
+        margin-inline: auto;
+        background-color: white;
+        border: 2px solid gray;
+        border-radius: 8px;
+        margin-top: 2vh;
+    }
+    
+    #user2ImgCont{
+        background: linear-gradient(rgb(28, 200, 212),rgb(14, 14, 219));
+        height: 25vh;
+        width: 25vh;
+        border-radius: 300px;
+        margin-inline: auto;
+        margin-top: 15%;
+    }
+    
+    #user2ImgCont  img{
+        height: 90%;
+        width: 90%;
+        border-radius: 300px;
+    }
+    #user2ImgCont  div{
+        background-color: white;
+        height: 90%;
+        width: 90%;
+        border-radius: 300px;
+    }
+    
+    .user2Btn{
+        width: 50%;
+        margin-top: 3vh;
+    }
+    
+
+
+
+
+
+
+
+
+    /* -----For iteam card ------------ */
+    #iteamCard {
+        height: 30vh;
+    }
+
+    /* ---------------------------------------------------------
+    ------------------------utility classes------------------
+    --------------------------------------------------------- */
+    .DisBlockCss {
+        display: block;
+    }
+
+    .DisableCss {
+        display: none;
+    }
+
+    .FlexRow {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .FlexCol {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FlexBetween {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .FlexCenter {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .PrimeHeading {
+        font-size: 3vh;
+        font-weight: 700;
+        height: 5vh;
+        width: 100vw;
+        padding-left: 25vw;
+        padding-top: 0.5vh;
+        margin-bottom: 1vh;
+    }
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ContainerFrame {
+        border: 2px solid lightgray;
+        border-radius: 8px;
+    }
+
+    .primButton {
+        height: 5vh;
+        width: 20vw;
+        font-size: 1.8vh;
+    }
+
+    .secButton {
+        height: 5vh;
+        width: 20vw;
+        font-size: 1.8vh;
+    }
+}
